@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+:root {
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+  --very-dark-blue: hsl(234, 12%, 34%);
+  --grayish-blue: hsl(229, 6%, 66%);
+  --very-light-gray: hsl(0, 0%, 98%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  color: var(--very-dark-blue);
+}
+
+.main {
+  min-height: calc(100vh - 0px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--very-light-gray);
+}
+
+.header {
+  text-align: center;
+  max-width: 25rem;
+  margin: 1rem;
+  margin-top: 3rem;
+}
+
+.header h1 {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.header h2 {
+  font-size: 1.4em;
+  font-weight: 200;
+}
+
+.header p {
+  font-size: 1em;
+  padding: 1.5rem;
+  margin: 1rem;
+}
+
+.card {
+  max-width: 20rem;
+  background-color: white;
+  box-shadow: 1px 5px 10px var(--grayish-blue);
+  margin: 1rem;
+  padding: 1.5rem;
+  border-radius: 0.25rem;
+}
+
+.card:nth-of-type(1) {
+  border-top: 3px solid var(--cyan);
+}
+.card:nth-of-type(2) {
+  border-top: 3px solid var(--red);
+}
+.card:nth-of-type(3) {
+  border-top: 3px solid var(--orange);
+}
+.card:nth-of-type(4) {
+  border-top: 3px solid var(--blue);
+}
+
+.card h3 {
+  font-size: 1.1em;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  margin-bottom: 2rem;
+}
+
+.card > .footer {
+  text-align: end;
+}
+
+.card > .footer > img {
+  height: 3rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  width: 100%;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 992px) {
+  .attribution {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .main {
+    display: flex;
+    justify-content: start;
+  }
+
+  .header {
+    max-width: 35rem;
+    margin: 0;
+    padding: 0;
+    margin-top: 5rem;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .header h2 {
+    font-size: 1.7rem;
+  }
+
+  .container {
+    max-width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      ". b ."
+      "a b d"
+      "a c d"
+      ". c .";
+  }
+  .card:nth-of-type(1) {
+    grid-area: a;
+  }
+  .card:nth-of-type(2) {
+    grid-area: b;
+  }
+  .card:nth-of-type(3) {
+    grid-area: c;
+  }
+  .card:nth-of-type(4) {
+    grid-area: d;
+  }
+}
