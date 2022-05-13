@@ -16,7 +16,8 @@ The main challenge here is laying out the cards in a diamond like pattern.
 
 ## My solution
 
-First, I created the
+First, I created the four cards in a column for a clean mobile view. Then, when the screen becomes big enough, I arranged the main section with the diamond like pattern using CSS grid.
+The grid is comprised by 3 x 2 columns and rows and from the, it was just a matter of plotting the cards according to their position.
 
 ## Technologies used
 
@@ -28,7 +29,7 @@ First, I created the
 
 ## Preview
 
-![Actual preview for my project - Desktop](./design/actual-dekstop.png)
+![Actual preview for my project - Desktop](./design/actual-desktop.png)
 <img src="./design/actual-mobile.png" style = "height: 50vh;">
 
 ## Deployment
