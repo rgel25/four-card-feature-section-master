@@ -36,7 +36,7 @@ The grid is comprised by 3 x 2 columns and rows and from the, it was just a matt
 
 You may visit the deployed web app through the link below.
 
-- [https://amiralles-threecolumnchallenge.netlify.app/](https://amiralles-threecolumnchallenge.netlify.app/)
+- [https://amiralles-fourcardchallenge.netlify.app/](https://amiralles-fourcardchallenge.netlify.app/)
 
 ## Footer
 
